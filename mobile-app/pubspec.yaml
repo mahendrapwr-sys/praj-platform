@@ -1,0 +1,73 @@
+name: mobile_app
+description: "PRAJ Platform - Mobile Application built with Flutter"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.0.0
+  
+  # HTTP Client
+  http: ^1.1.0
+  dio: ^5.3.0
+  
+  # Local Storage
+  shared_preferences: ^2.2.0
+  hive: ^2.2.0
+  
+  # JWT & Security
+  jwt_decoder: ^2.0.1
+  flutter_secure_storage: ^9.0.0
+  
+  # UI & Theming
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.0
+  
+  # Navigation
+  go_router: ^12.0.0
+  
+  # Form & Validation
+  reactive_forms: ^16.0.0
+  
+  # Date & Time
+  intl: ^0.19.0
+  
+  # Logging
+  logger: ^2.0.0
+  
+  # JSON Serialization
+  json_serializable: ^6.7.0
+  build_runner: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  
+  # Code Generation
+  json_serializable: ^6.7.0
+  build_runner: ^2.4.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+        - asset: assets/fonts/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
+          weight: 600
